@@ -1,2 +1,2 @@
 # template-plugin-professional-services-flexdev
-Custom template for new Flex plugins by Twilio Expert Services
+A developer-friendly starting point for creating new Flex plugins
