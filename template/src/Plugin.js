@@ -37,10 +37,14 @@ class PhoneNumber extends React.Component {
 
   render() {
     let style = {
-      fontSize: "2.5em"
+      fontSize: "10vw"
     }
-    let parsedNumber = parsePhoneNumberFromString(this.state.number);
-    return <div style={style}>{parsedNumber.formatInternational()}</div>
+    let formattedNumber = ""
+    if (this.state.number) {
+      let parsedNumber = this.state.number ? parsePhoneNumberFromString(this.state.number) : "";
+      formattedNumber = parsedNumber.formatInternational()
+    }
+    return <div style={style}>{formattedNumber}</div>
   }
 }
 
