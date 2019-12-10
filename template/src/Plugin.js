@@ -33,7 +33,7 @@ class PhoneNumber extends React.Component {
     let style = {
       fontSize: "2.5em"
     }
-    let parsedNumber = parsePhoneNumberFromString(parsePhoneNumberFromString(this.state.number));
+    let parsedNumber = parsePhoneNumberFromString(this.state.number);
     return <div style={style}>{phoneNumber.formatInternational()}</div>
   }
 }
