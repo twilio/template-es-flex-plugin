@@ -24,7 +24,8 @@
     "flex-plugin-scripts": "^3.3.5",
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "libphonenumber": "0.0.10"
   },
   "devDependencies": {
     "@twilio/flex-ui": "{{flexSdkVersion}}",
