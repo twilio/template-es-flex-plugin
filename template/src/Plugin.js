@@ -37,12 +37,12 @@ class PhoneNumber extends React.Component {
 
   render() {
     let style = {
-      fontSize: "10vw"
+      fontSize: "30px",
     }
     let formattedNumber = ""
     if (this.state.number) {
       let parsedNumber = this.state.number ? parsePhoneNumberFromString(this.state.number) : "";
-      formattedNumber = parsedNumber.formatInternational()
+      formattedNumber = parsedNumber.formatInternational().split(" ").join(" · ")
     }
     return <div style={style}>{formattedNumber}</div>
   }
@@ -63,7 +63,7 @@ export default class Plugin extends FlexPlugin {
   init(flex, manager) {
     this.populateWindowLog();
 
-    window.log("Flex Version: " + VERSION + "\n" + "React Version: " + React.version);
+    window.log("Flex Version: " + VERSION + "\nReact Version: " + React.version);
     
     MainHeader.Content.add(<PhoneNumber key="phoneNumber" token={manager.user.token}/>, {
       sortOrder: -1, 
