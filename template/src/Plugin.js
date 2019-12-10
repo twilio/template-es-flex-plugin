@@ -40,7 +40,7 @@ class PhoneNumber extends React.Component {
       fontSize: "2.5em"
     }
     let parsedNumber = parsePhoneNumberFromString(this.state.number);
-    return <div style={style}>{phoneNumber.formatInternational()}</div>
+    return <div style={style}>{parsedNumber.formatInternational()}</div>
   }
 }
 
