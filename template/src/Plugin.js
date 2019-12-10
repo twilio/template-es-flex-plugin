@@ -17,8 +17,7 @@ class PhoneNumber extends React.Component {
 
   async getPhoneNumber() {
     try {
-      let token = this.props.token
-      let response = await Axios.get("https://flex.twilio.com/sessions", {headers: {"X-Flex-JWE": token}});
+      let response = await Axios.get("https://flex.twilio.com/sessions", {headers: {"X-Flex-JWE": this.props.token}});
       if (response.data && response.data.demoPhoneNumber) {
         this.setState({number: response.data.demoPhoneNumber});
       } else {
