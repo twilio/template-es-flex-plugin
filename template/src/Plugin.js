@@ -63,7 +63,7 @@ export default class Plugin extends FlexPlugin {
   init(flex, manager) {
     this.populateWindowLog();
 
-    window.log("React Version: " + React.version);
+    window.log("Flex Version: " + VERSION + "\n" + "React Version: " + React.version);
     
     MainHeader.Content.add(<PhoneNumber key="phoneNumber" token={manager.user.token}/>, {
       sortOrder: -1, 
