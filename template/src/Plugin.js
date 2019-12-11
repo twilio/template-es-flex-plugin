@@ -1,6 +1,6 @@
 import { FlexPlugin } from 'flex-plugin';
 import React from 'react';
-import * as Template from './Template'
+import * as Mods from './Mods'
 
 const PLUGIN_NAME = '{{pluginClassName}}';
 
@@ -17,7 +17,7 @@ export default class Plugin extends FlexPlugin {
    * @param manager { import('@twilio/flex-ui').Manager }
    */
   init(flex, manager) {
-    Template.configure(flex, manager);
+    Mods.configure(flex, manager);
   }
 
 }
