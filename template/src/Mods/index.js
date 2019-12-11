@@ -36,7 +36,7 @@ const Mods = {
 export const configure = (flex, manager, config = {}) => {
   for (let key in Mods) {
     let mod = Mods[key];
-    if (mod.default || config[key]) {
+    if ((mod.default || config[key] === true) && config[key] !== false) {
       if (mod.function) {
         try {
           mod.function(flex, manager);
