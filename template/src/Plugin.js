@@ -1,5 +1,6 @@
-import { FlexPlugin } from 'flex-plugin';
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { FlexPlugin } from 'flex-plugin';
 import * as Mods from './Mods'
 
 const PLUGIN_NAME = '{{pluginClassName}}';
@@ -17,7 +18,10 @@ export default class Plugin extends FlexPlugin {
    * @param manager { import('@twilio/flex-ui').Manager }
    */
   init(flex, manager) {
-    Mods.configure(flex, manager);
+    Mods.applyMods(flex, manager, {
+      addPhoneNumber: true,
+      addWindowLog: true
+    });
   }
 
 }
