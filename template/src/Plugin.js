@@ -20,7 +20,8 @@ export default class Plugin extends FlexPlugin {
   init(flex, manager) {
     Mods.applyMods(flex, manager, {
       addPhoneNumber: true,
-      addWindowLog: true
+      addWindowLog: true,
+      addCustomTaskList: false,
     });
   }
 
