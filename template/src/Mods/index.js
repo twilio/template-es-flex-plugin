@@ -1,5 +1,7 @@
 import * as ModModules from "./ModModules"
 
+export { default as TestComponent } from "./Components/TestComponent"
+
 export const applyMods = (flex, manager, config = {}) => {
   for (let key in ModModules) {
     let modModule = ModModules[key]
