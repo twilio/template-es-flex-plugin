@@ -31,3 +31,17 @@ Current mods are:
     <img src="https://github.com/twilio/template-es-flex-plugin/blob/media/addWindowLog.png" width="480">
 - addCustomTaskList
   - The boilerplate included with the default `create-flex-plugin` template, repackaged as a Mod. It includes an example of using a custom namespaced Flux store with `addReducer` and `combineReducers`
+- TestComponent
+  - exports `Mods.TestComponent`, a simple React component for use during early Plugin development
+  - This component takes a couple (optional) properties:
+      - `color`: Sets the component's background color. (default: `#00ff00`)
+      - `contents`: Sets the contents of the component. (default: `"Test Component"`)
+  - Example:
+
+  ```
+  import * as Mods from './Mods'
+
+  ...
+
+  flex.MainContainer.Content.add(<Mods.TestComponent key="test" color="#FFC0CB" contents="HI THERE"/>)
+  ```
