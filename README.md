@@ -30,4 +30,4 @@ Current mods are:
   - Creates a `window.log` function that prints lines with a colored header to make them easier to find
     <img src="https://github.com/twilio/template-plugin-professional-services-flexdev/blob/media/addWindowLog.png" width="480">
 - addCustomTaskList
-  - The boilerplate included with the default `create-flex-plugin` template, repackaged as a Mod
+  - The boilerplate included with the default `create-flex-plugin` template, repackaged as a Mod. It includes an example of using a custom namespaced Flux store with `addReducer` and `combineReducers`
