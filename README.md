@@ -43,5 +43,5 @@ Current mods are:
 
     ...
 
-    flex.MainContainer.Content.add(<Mods.TestComponent key="test-component" color="#FFC0CB" contents="HI THERE"/>)
+    flex.MainContainer.Content.add(<Mods.TestComponent key="test" color="#FFC0CB" contents="HI THERE"/>)
     ```
