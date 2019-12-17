@@ -25,7 +25,9 @@ With this Template, you can build your own plugin using whatever structure you p
 Current mods are: 
 - addPhoneNumber
   - Looks up your Flex phone number and adds it to the Flex header
+    <img src="https://github.com/twilio/template-plugin-professional-services-flexdev/blob/media/addPhoneNumber.png" width="480">
 - addWindowLog
   - Creates a `window.log` function that prints lines with a colored header to make them easier to find
+    <img src="https://github.com/twilio/template-plugin-professional-services-flexdev/blob/media/addWindowLog.png" width="480">
 - addCustomTaskList
   - The boilerplate included with the default `create-flex-plugin` template, repackaged as a Mod
