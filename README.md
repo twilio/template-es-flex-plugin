@@ -1,4 +1,4 @@
-# template-plugin-professional-services-flexdev
+# Twilio Expert Services Flex Plugin Template
 A developer-friendly starting point for creating new Flex plugins
 
 To use this template, run [`create-flex-plugin`](https://github.com/twilio/flex-plugin-builder/tree/master/packages/create-flex-plugin) with the `--template` option like so:
