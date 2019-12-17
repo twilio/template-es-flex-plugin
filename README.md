@@ -38,7 +38,7 @@ Current mods are:
         - `contents`: Sets the contents of the component. (default: `"Test Component"`)
     - Example:
 
-    ```
+    ```javascript
     import * as Mods from './Mods'
 
     ...
