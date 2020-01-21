@@ -9,7 +9,7 @@
     "clear": "flex-plugin clear",
     "predeploy": "npm run build",
     "deploy": "flex-plugin deploy",
-    "deployFunctions": "chmod u+x deploy.sh && ./deploy.sh",
+    "deployFunctions": "chmod u+x scripts/functionsV2Deploy.sh && scripts/functionsV2Deploy.sh",
     "eject": "flex-plugin eject",
     "info": "flex-plugin info",
     "postinstall": "npm run bootstrap",
