@@ -16,7 +16,8 @@
     "remove": "flex-plugin remove",
     "prestart": "npm run bootstrap",
     "start": "flex-plugin start",
-    "test": "flex-plugin test --env=jsdom"
+    "test": "flex-plugin test --env=jsdom",
+    "clone-studio-config": "scripts/clone-studio-config.sh"
   },
   "dependencies": {
     "craco-config-flex-plugin": "{{cracoConfigVersion}}",
