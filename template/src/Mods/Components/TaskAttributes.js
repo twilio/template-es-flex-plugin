@@ -1,15 +1,34 @@
 import React from 'react';
 
 export default class TaskAttributes extends React.Component {
-  render() {
-    let style = {
-      fontFamily: '"monaco", "Courier New", monospace',
-      whiteSpace: "pre",
+  monoStyle = {
+    fontFamily: '"monaco", "Courier New", monospace',
+    whiteSpace: "pre",
+  }
+
+  chatChannelAttributes() {
+    if (this.props.chatChannel) {
+      return <div class="Twilio">
+        <hr />
+        <h1>Chat Channel Attributes</h1>
+        <div style={this.monoStyle}>{JSON.stringify(this.props.chatChannel.source.attributes, null, 2)}</div>
+      </div>
+    } else {
+      return null
     }
-    return <div class="Twilio">
-      <hr />
-      <h1>Task Attributes</h1>
-      <div style={style}>{JSON.stringify(this.props.task.attributes, null, 2)}</div>
+  }
+
+  render() {
+    return <div>
+
+      <div class="Twilio">
+        <hr />
+        <h1>Task Attributes</h1>
+        <div style={this.monoStyle}>{JSON.stringify(this.props.task.attributes, null, 2)}</div>
+      </div>
+
+      {this.chatChannelAttributes()}
+
     </div>
   }
 }
