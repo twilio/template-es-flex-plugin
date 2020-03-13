@@ -22,6 +22,7 @@ export default class Plugin extends FlexPlugin {
       addPhoneNumber: true,
       addWindowLog: true,
       addCustomTaskList: false,
+      addTaskAttributesToInfoTab: true
     });
   }
 
