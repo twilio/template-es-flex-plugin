@@ -7,7 +7,7 @@ export default class TaskAttributes extends React.Component {
   }
 
   chatChannelAttributes() {
-    if (this.props.chatChannel) {
+    if (this.props.chatChannel && this.props.chatChannel.source) {
       return <div class="Twilio">
         <hr />
         <h1>Chat Channel Attributes</h1>
